@@ -1,5 +1,5 @@
 # Grupo 8
- Este repositório tem o obejetivo de facilitar a colaboração entre os integrantes do grupo, para a realização de um objetivo em comum: a conclusão do trabalho.
+ Este repositório tem o objetivo de facilitar a colaboração entre os integrantes do grupo, para a realização de um objetivo em comum: a conclusão do trabalho.
  
 Nomes: JOAO VITOR DE JESUS SOUZA
 LUISA FONTES ABREU OLIVEIRA CUNHA
@@ -8,7 +8,7 @@ TIAGO DE CARVALHO LAPA
 
 Situação problema: AgendaFácil NAF
 
-Descrição resumida das tecnologias utilizadas:
+Descrição resumida das tecnologias utilizadas: Git hub, planilha no excel,
 
 Tipo de MVP: Protótipo
 
