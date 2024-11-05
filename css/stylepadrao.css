@@ -1,0 +1,80 @@
+.top{
+    background-color: #006b64;
+    height: 52px;
+    font-size: 12px;
+    color: aliceblue;
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+img{
+    align-self: normal;
+}
+
+main{
+    text-align: center;
+}
+
+/* AGENDA */
+.fc-vago {
+        width: 50%;
+        background-color: #28a745; 
+        color: white; 
+        font-size: 30px;    
+}
+.fc-event {
+    background-color: #007bff; /* Cor azul para eventos agendados */
+    color: white;
+}
+/* EFEITO MENU */
+a.animated-button.thar-four {
+    color: #070707;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #b1b0b0;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+a.animated-button.thar-four:hover {
+    color: #000000 !important;
+    background-color: transparent;
+    text-shadow: nfour;
+}
+
+a.animated-button.thar-four:hover:before {
+    right: 0%;
+    left: auto;
+    width: 100%;
+}
+
+a.animated-button.thar-four:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #b1b0b0 !important;
+    background: #b1b0b0;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    #menu-tops-active {
+        font-family: GOTHAM-MEDIUM;
+        background-color: #b1b0b0;
+        color: #fff;
+        font-size: 19px;
+        border: none;
+    }
+    
+    #menu-tops-active:hover {
+        background-color: #b1b0b0;
+        color: #fff;
+        font-size: 19px;
+        border: none;
+    }
+

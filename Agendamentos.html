@@ -1,0 +1,154 @@
+<html>
+    <head style="background-color: aliceblue;">
+        <title>Agendamento online - Duvidas</title>
+
+        <link rel="stylesheet"  href="css/stylepadrao.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    <!--calendario-->  
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
+
+    </head>
+<body>
+<div>    
+    <div class="top">
+        <p style="margin-left: 10px;">CENTRO UNIVERSITÁRIO SERRA DOS ÓRGÃOS</P> 
+        <p style="text-align: center; font-size: 20px;">AGENDAMENTO ONLINE - AGENDAMENTOS</p>
+    </div> 
+        <br>
+
+    <div>
+        <a href="https://www.unifeso.edu.br"> 
+            <img src="picture/logo unifeso.png" alt=""></a> 
+    </div>
+            
+    <div>
+        <ul class="nav nav-tabs nav-justified">
+            <li role="presentation "><a href="index.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Novidades</a></li>
+            <li role="presentation "><a href="Agendamentos.html" CLASS="animated-button thar-four menu-txt" id="menu-tops-active">Agendamentos</a></li>
+            <li role="presentation "><a href="cadastro.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Cadastros</a></li>
+            <li role="presentation "><a href="duvidas.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Duvidas</a></li>
+        </ul>
+    </div>
+</div>
+
+<div>
+    <main>
+        <ul class="nav nav-tabs nav-justified">
+            <li role="presentation"><a href="" class="animated-button thar-four menu-txt" id="menu-tops-active">Horarios disponiveis</a></li>
+        </ul>
+    </main>
+</div>
+
+<!--calendario-->  
+<div id="calendar"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+                // Definindo os horários disponíveis como eventos
+                var availableTimes = [
+            {
+                title: 'Disponível para Reservas',
+                start: '2024-11-05T09:00:00',
+                end: '2024-11-05T17:00:00',
+                color: '#28a745', // Cor verde para indicar disponibilidade
+                classNames: ['fc-vago']
+            },
+            {
+                title: 'Disponível para Consultas',
+                start: '2024-11-08T09:00:00',
+                end: '2024-11-08T17:00:00',
+                color: '#28a745',
+                classNames: ['fc-vago']
+            }
+        ];
+            // Eventos já agendados
+            var EventosAgendado = [
+            {
+                title: 'Reunião de equipe',
+                start: '2024-11-08T10:00:00',
+                end: '2024-11-08T12:00:00',
+                classNames: ['fc-event']
+            }
+        ];
+
+        var allEvents = availableTimes.concat(EventosAgendado); // Combina todos os eventos
+
+        var calendarEl = document.getElementById('calendar');
+        
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'pt-br',
+            initialView: 'timeGridWeek', // Visualização Semanal
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay' // Vistas de mês, semana, e dia
+            },
+            buttonText: {
+                today: 'Hoje',
+                month: 'Mês',
+                week: 'Semana',
+                day: 'Dia',
+                list: 'Agenda'
+            },
+            events: allEvents,
+            editable: true,
+            selectable: true,
+selectAllow: function(selectInfo) {
+                // Verifica se a seleção conflita com eventos existentes
+                return !EventosAgendado.some(function(event) {
+                    return (
+                        selectInfo.start < new Date(event.end) &&
+                        selectInfo.end > new Date(event.start)
+                    );
+                });
+            },
+select: function(info) {
+                    // Verifica se o horário está disponível para agendamento
+                    if (availableTimes.some(function(event) {
+                        return (
+                            info.start < new Date(event.end) &&
+                            info.end > new Date(event.start)
+                        );
+                    })){
+                        var title = prompt('Digite o título do evento:');
+                        if (title) {
+                            EventosAgendado.push({ // Adiciona o novo evento à lista de eventos agendados
+                                title: title,
+                                start: info.start,
+                                end: info.end,
+                                classNames: ['fc-event']
+                            });
+
+                            calendar.addEvent({
+                                title: title,
+                                start: info.start,
+                                end: info.end,
+                                allDay: info.allDay,
+                                classNames: ['fc-event']
+                            });
+                        }
+                    }else{
+                        alert('Este horário (' + info.start.toLocaleString() + ') não está disponivel para agendamento.');   
+                    }
+                    calendar.unselect();
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+        
+<!--footer-->  
+<link rel="stylesheet" href="https://www.unifeso.edu.br/css/estilo-footer.css">
+
+<footer class="nb-footer">
+	<div class="container-fluid" style="width: 100%; ">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="about">
+					<img src="picture/logo unifeso footer.png" alt="" style="width: 255px; padding-top: 40px !important">
+                </div>
+                </footer>
+    </body>
+</html>
