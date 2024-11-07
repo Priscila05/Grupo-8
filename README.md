@@ -13,7 +13,8 @@ AgendaFácil NAF
 ## Descrição resumida das tecnologias utilizadas: 
  - Git hub
  - Planilha no excel
- - 
+ - HTML
+ - CSS
 
 ## Tipo de MVP: 
 Protótipo
@@ -33,3 +34,5 @@ Protótipo
  - Problemas e dificuldades com a complexidade dos processos de declaração de imposto de renda e outros.
  - Falta de atenção ao preencher a declaração do imposto de renda digitando pontos, vírgulas e números errados.
  - Esquecer ou não preencher algum campo por falta de conhecimento/entendimento do que está sendo solicitado.
+
+https://1drv.ms/x/c/c491866664c16925/EQqYYM08HQREgKhEx_RI5TQBOvFHUHX_PpRgsEEZIzZNiw?e=8tx1ss
