@@ -7,25 +7,34 @@
     <!--calendario-->  
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
-
-    </head>
+    <script src="login.js"></script>    
+</head>
 <body>
 <div>    
     <div class="top">
-        <p style="margin-left: 10px;">CENTRO UNIVERSITÁRIO SERRA DOS ÓRGÃOS</P> 
+        <header style="margin-left: 10px; display: flex; justify-content: space-between;">
+            CENTRO UNIVERSITÁRIO SERRA DOS ÓRGÃOS 
+            <div id="loginForm" style="text-align: right;">
+                <label>Login</label>
+                <input class="login" type="text" id="usuario" name="usuario" required>
+                <label>Senha</label>
+                <input class="login" type="password" id="senha" name="senha">
+                <button class="loginButton" type="button" onclick="verificarLogin()">Login</button>
+            </div>
+        </header> 
         <p style="text-align: center; font-size: 20px;">AGENDAMENTO ONLINE - AGENDAMENTOS</p>
     </div> 
         <br>
 
     <div>
-        <a href="https://www.unifeso.edu.br"> 
+        <a href="Index.html"> 
             <img src="picture/logo unifeso.png" alt=""></a> 
     </div>
             
     <div>
         <ul class="nav nav-tabs nav-justified">
             <li role="presentation "><a href="index.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Novidades</a></li>
-            <li role="presentation "><a href="Agendamentos.html" CLASS="animated-button thar-four menu-txt" id="menu-tops-active">Agendamentos</a></li>
+            <li role=" "><a href="Agendamentos.html" CLASS="animated-button thar-four menu-txt" id="menu-tops-active"disabled>Agendamentos</a></li>
             <li role="presentation "><a href="cadastro.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Cadastros</a></li>
             <li role="presentation "><a href="duvidas.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Duvidas</a></li>
         </ul>
