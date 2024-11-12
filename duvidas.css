@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.duvidas {
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+
+.duvidas input {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+}
+
+.duvidas input:focus {
+    border: 2px solid #006b64;
+    outline: 0;
+}
+
+.duvidas textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+}
+
+.duvidas  textarea:focus {
+    border: 1px solid #006b64;
+    outline: 0;
+}
+
+.duvidas button {
+    border: 0;
+    padding: 10px 30px;
+    background-color: #006b64;
+    color: #f2f2f2;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.duvidas button:hover {
+    background-color: #1f5a56;
+}
