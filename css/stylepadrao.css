@@ -1,51 +1,57 @@
-.top{
+.top {
     background-color: #006b64;
     height: 60px;
     font-size: 12px;
     color: aliceblue;
-    width: 100%; 
-    margin: 0; 
+    width: 100%;
+    margin: 0;
     padding: 0;
 }
-.login{
+
+.login {
     width: 100px;
-    border-radius:7px;
+    border-radius: 7px;
     color: black;
 }
 
-.loginButton{
-    border-radius:7px;
+.loginButton {
+    border-radius: 7px;
     color: black;
     margin-right: 10px;
     width: 50px;
 }
-.menboasvindas{
+
+.menboasvindas {
     color: black;
-    font-size: 15px;
+    font-size: 16px;
 }
 
-img{
+img {
     align-self: normal;
 }
 
-main{
+main {
     text-align: center;
 }
-input{
+
+input {
     border-color: #006b64;
 }
 
 /* AGENDA */
 .fc-vago {
-        width: 50%;
-        background-color: #28a745; 
-        color: white; 
-        font-size: 30px;    
+    width: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 30px;
 }
+
 .fc-event {
-    background-color: #007bff; /* Cor azul para eventos agendados */
+    background-color: #007bff;
+    /* Cor azul para eventos agendados */
     color: white;
 }
+
 /* EFEITO MENU */
 a.animated-button.thar-four {
     color: #070707;
@@ -54,7 +60,7 @@ a.animated-button.thar-four {
     position: relative;
     border: 2px solid #b1b0b0;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-    }
+}
 
 a.animated-button.thar-four:hover {
     color: #000000 !important;
@@ -80,130 +86,174 @@ a.animated-button.thar-four:before {
     color: #b1b0b0 !important;
     background: #b1b0b0;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-    }
-    #menu-tops-active {
-        font-family: GOTHAM-MEDIUM;
-        background-color: #b1b0b0;
-        color: #fff;
-        font-size: 19px;
-        border: none;
-    }
-    
-    #menu-tops-active:hover {
-        background-color: #b1b0b0;
-        color: #fff;
-        font-size: 19px;
-        border: none;
-    }
+}
 
-/* duvidas*/ 
- * {
-        padding: 0;
-        margin: 0;
-    }
-    
-    .duvidas {
-        top: 60%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        width: 70%;
-    }
-    
-    
-    .duvidas input {
-        width: 100%;
-        height: 60px;
-        padding: 0 20px;
-        margin-bottom: 15px;
-        border-radius: 5px;
-        border: 1px solid #868686;
-    }
-    
-    .duvidas input:focus {
-        border: 2px solid #006b64;
-        outline: 0;
-    }
-    
-    .duvidas textarea {
-        width: 100%;
-        height: 200px;
-        padding: 15px 20px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 1px solid #868686;
-    }
-    
-    .duvidas  textarea:focus {
-        border: 1px solid #006b64;
-        outline: 0;
-    }
-    
-    .duvidas button {
-        border: 0;
-        padding: 10px 30px;
-        background-color: #006b64;
-        color: #f2f2f2;
-        font-size: 13px;
-        border-radius: 5px;
-    }
-    
-    .duvidas button:hover {
-        background-color: #1f5a56;
-    }
+#menu-tops-active {
+    font-family: GOTHAM-MEDIUM;
+    background-color: #b1b0b0;
+    color: #fff;
+    font-size: 19px;
+    border: none;
+}
 
-     /* slides novidades*/
-     .slideshow-container {
-        max-width: 800px; 
-        position: relative;
-        margin: auto;
-        overflow: hidden; 
-        height: 600px; 
-    }
+#menu-tops-active:hover {
+    background-color: #b1b0b0;
+    color: #fff;
+    font-size: 19px;
+    border: none;
+}
 
-    .slides {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 1s ease; /* Transição suave de 0.8s */
-    }
+/* duvidas*/
+* {
+    padding: 0;
+    margin: 0;
+}
 
-    .active-slide {
-        opacity: 1;
-        visibility: visible; 
-        transform: translateX(0); 
-        z-index: 1;
-    }
-
-    .slide-out-left {
-        transform: translateX(-100%); 
-    }
+.duvidas {
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
 
 
-    .slide-in-right {
-        transform: translateX(100%); 
-    }
+.duvidas input {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+}
 
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 24px;
-        color: white;
-        font-weight: bold;
-        font-size: 36px;
-        border-radius: 0 3px 3px 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        transform: translateY(-50%);
-    }
-    .preev {
-        left: 0;
-        border-radius: 3px 0 0 3px;
-    }
+.duvidas input:focus {
+    border: 2px solid #006b64;
+    outline: 0;
+}
 
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
+.duvidas textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+}
+
+.duvidas textarea:focus {
+    border: 1px solid #006b64;
+    outline: 0;
+}
+
+.duvidas button {
+    border: 0;
+    padding: 10px 30px;
+    background-color: #006b64;
+    color: #f2f2f2;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.duvidas button:hover {
+    background-color: #1f5a56;
+}
+
+/* aba novidades */
+
+.bem-vindo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.bem-vindo h2 {
+    color: #006b64;
+    font-size: 45px;
+}
+
+.bem-vindo h3 {
+    font-size: 25px;
+}
+
+.bem-vindo p{
+    font-size: 20px;
+    padding: 5px 18px;
+    background-color: #b1b0b08a;
+    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bem-vindo a{
+font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+    border: 2px solid  #006b64;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: #006b64;
+}
+
+
+.bem-vindo a:hover {
+    background-color:#006b64;
+    color: #f2f2f2;
+}
+
+/* slides novidades*/
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease;
+    /* Transição suave de 0.8s */
+}
+
+.active-slide {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+.slide-out-left {
+    transform: translateX(-100%);
+}
+
+
+.slide-in-right {
+    transform: translateX(100%);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+}
+
+.preev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
