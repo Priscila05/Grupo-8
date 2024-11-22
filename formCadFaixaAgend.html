@@ -1,11 +1,14 @@
 <html>
     <head style="background-color: aliceblue;">
-        <title>Agendamento online - cadastro</title>
+        <title>Agendamento online - Duvidas</title>
 
         <link rel="stylesheet"  href="css/stylepadrao.css">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <script src="login.js"></script>  
-    </head>
+    <!--calendario-->  
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
+    <script src="login.js"></script>    
+</head>
 <body>
 <div>    
     <div class="top">
@@ -19,20 +22,20 @@
                 <button class="loginButton" type="button" onclick="verificarLogin()">Login</button>
             </div>
         </header> 
-        <p style="text-align: center; font-size: 20px;">AGENDAMENTO ONLINE - CADASTRO</p>
+        <p style="text-align: center; font-size: 20px;">AGENDAMENTO ONLINE - AGENDAMENTOS</p>
     </div> 
         <br>
 
     <div>
-        <a href="https://www.unifeso.edu.br"> 
+        <a href="Index.html"> 
             <img src="picture/logo unifeso.png" alt=""></a> 
     </div>
             
     <div>
         <ul class="nav nav-tabs nav-justified">
             <li role="presentation "><a href="index.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Novidades</a></li>
-            <li role="presentation "><a onclick="verificaCaminhoagendamento()" CLASS="animated-button thar-four menu-txt" id="menu-tops">Agendamentos</a></li>
-            <li style=" border-bottom: 1px solid #ddd;" role="presentation "><a onclick="verificaCaminhoCadastro()" CLASS="animated-button thar-four menu-txt" id="menu-tops-active">Cadastros</a></li>
+            <li role=" "><a onclick="verificaCaminhoagendamento()" CLASS="animated-button thar-four menu-txt" id="menu-tops-active"disabled>Agendamentos</a></li>
+            <li role="presentation "><a onclick="verificaCaminhoCadastro()" CLASS="animated-button thar-four menu-txt" id="menu-tops">Cadastros</a></li>
             <li role="presentation "><a href="duvidas.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Duvidas</a></li>
         </ul>
     </div>
@@ -41,49 +44,45 @@
 <div>
     <main>
         <ul class="nav nav-tabs nav-justified">
-            <li role="presentation"><a href="" class="animated-button thar-four menu-txt" id="menu-tops-active">Cadastro usuario</a></li>
+            <li role="presentation"><a onclick="verificaCaminhoagendamento()"  class="animated-button thar-four menu-txt" id="menu-tops">Horarios disponiveis</a></li>
+            <li role="presentation"><a href="" class="animated-button thar-four menu-txt" id="menu-tops-active">Cadastrar Faixa Disponivel</a></li>
         </ul>
     </main>
 </div>
 
+<main style="font-size: large;">
+    Cadastrar a Faixa de horário disponivel
+</main>
+<br>
+<br>
 
-    <main style="font-size: large;">
-        Seja bem vindo a area de cadastro
-    </main>
-    <br>
-    <br>
 <div class="container">
     <main>
         <form style="align-self: center;">
-            Informe seu nome 
-                <br>
-            <input type="text" id="nome" required>
-                <br>
-                <br>
-            Informe seu cpf
-                <br>
-            <input type="text" id="cpf" required>
+            Informe a data inico 
+            <br>
+            <input type="date" id="dataini" required>
             <br>
             <br>
-            Informe sua matricula
-                <br>
-            <input type="text" id="matricula" required>
+            Informe a hora inico 
+            <br>
+            <input type="datetime" id="horaini" required>
             <br>
             <br>
-            Informe seu email
+            Informe a data Fim 
             <br>
-            <input type="email" id="email" required>
-            <br>
-            <br>
-            Informe sua senha
-            <br>
-            <input type="password" id="senha" required>
+            <input type="date" id="datafim" required>
             <br>
             <br>
-            <input type="submit" onclick="Cadastrorealizado()" value="cadastrar">
+            Informe a hora Fim 
+            <br>
+            <input type="datetime" id="forafim" required>
+            <br>
+            <br>
+            <input type="submit" onclick="AgendamentoRealizado()" value="cadastrar">
             
             <script>
-                function Cadastrorealizado(){
+                function AgendamentoRealizado(){
                     alert('Sua dúvida foi enviada com sucesso!');
                 }
                         
@@ -93,16 +92,7 @@
     </main>
 </div>
 
-
-<div>
-
-</div>
-
-
-
-
-        
-
+<!--footer-->  
 <link rel="stylesheet" href="https://www.unifeso.edu.br/css/estilo-footer.css">
 
 <footer class="nb-footer">
@@ -112,7 +102,6 @@
 				<div class="about">
 					<img src="picture/logo unifeso footer.png" alt="" style="width: 255px; padding-top: 40px !important">
                 </div>
-</footer>
-    </body>
+                </footer>
     </body>
 </html>
