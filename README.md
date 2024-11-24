@@ -1,5 +1,5 @@
 # Grupo 8
- Este repositório tem o objetivo de facilitar a colaboração entre os integrantes do grupo, para a realização de um objetivo em comum: a conclusão do trabalho.
+Este repositório tem o objetivo de facilitar a colaboração entre os integrantes do grupo, para a realização de um objetivo em comum: a conclusão do trabalho.
  
 ## Nomes:
  - João Vitor de Jesus Souza
@@ -11,13 +11,24 @@
 AgendaFácil NAF
 
 ## Descrição resumida das tecnologias utilizadas: 
- - Git hub
- - Planilha no excel
- - HTML
- - CSS
+ - Git hub: usada para juntar as partes do projeto
+ - Planilha no excel: usada para a elaboração dos requisitos
+ - HTML:
+ - CSS:
+ - JavaScript:
 
 ## Tipo de MVP: 
 Protótipo
+
+## Instruções para executar/abrir o MVP:
+ - 1 - Acesse a página principal deste repositório.
+ - 2 - Acima da lista de arquivos, clique em "Código" e copie a URL.
+ - 3 - Abra o terminal do seu navegador e altere o diretório atual para uma pasta vazia.
+ - 4 - Digite "git clone" e cole a URL e pressione enter.
+ - 5 - Abra esta pasta no explorador de arquivos, e em seguida, abra o arquivo index.htlm no seu navegador.
+
+## MVP defenido:
+ - Será realizado os requisitos com prioridade média e alta.
 
 ## Objetivos e benefícios do produto: 
  - Oferecer assistência, facilidade, praticidade e segurança, conectando estudantes das áreas contábeis, administrativas e do direito com declarantes do imposto de renda e outros.
@@ -35,4 +46,10 @@ Protótipo
  - Falta de atenção ao preencher a declaração do imposto de renda digitando pontos, vírgulas e números errados.
  - Esquecer ou não preencher algum campo por falta de conhecimento/entendimento do que está sendo solicitado.
 
-https://1drv.ms/x/c/c491866664c16925/EQqYYM08HQREgKhEx_RI5TQBOvFHUHX_PpRgsEEZIzZNiw?e=8tx1ss
+## Ferramenta de prototipação:
+ - Figma.
+
+## Telas prototipadas:
+ - Tela de cadastro.
+ - Tela de agendamento.
+ - Tela de perfil.
