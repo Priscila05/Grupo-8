@@ -176,18 +176,18 @@ a.animated-button.thar-four:before {
     font-size: 25px;
 }
 
-.bem-vindo p{
+.bem-vindo p {
     font-size: 20px;
     padding: 5px 18px;
     background-color: #b1b0b08a;
     font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
 }
 
-.bem-vindo a{
-font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+.bem-vindo a {
+    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     margin: 20px;
-    border: 2px solid  #006b64;
+    border: 2px solid #006b64;
     border-radius: 5px;
     padding: 8px 15px;
     color: #006b64;
@@ -195,7 +195,7 @@ font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
 
 
 .bem-vindo a:hover {
-    background-color:#006b64;
+    background-color: #006b64;
     color: #f2f2f2;
 }
 
@@ -256,4 +256,62 @@ font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+}
+
+/* cadastro*/
+#banner-cadastro {
+    color: #006b64;
+    font-size: 19px;
+}
+
+.container input {
+    width: 380;
+    height: 40;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    margin-left: 30;
+    border-radius: 5px;
+    border: 2px solid #d9d9d9;
+
+}
+
+.container label {
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+#butao {
+    background-color: #006b64;
+    font-size: 19px;
+    color: #f2f2f2;
+    width: 200px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+#butao:hover {
+    background-color: #f2f2f2;
+    color: #006b64;
+    border-color: #006b64;
+    border: 3px solid;
+}
+
+#formCadastro {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-grupo {
+    display: flex;
+    justify-content: end;
+    width: 70%;
+}
+
+.container main {
+    display: flex;
+    justify-content: center;
 }
