@@ -151,7 +151,7 @@ a.animated-button.thar-four:before {
     padding: 10px 30px;
     background-color: #006b64;
     color: #f2f2f2;
-    font-size: 13px;
+    font-size: 16px;
     border-radius: 5px;
 }
 
@@ -259,7 +259,7 @@ a.animated-button.thar-four:before {
 }
 
 /* cadastro*/
-#banner-cadastro {
+.banner-cadastro {
     color: #006b64;
     font-size: 19px;
 }
@@ -272,7 +272,11 @@ a.animated-button.thar-four:before {
     margin-left: 30;
     border-radius: 5px;
     border: 2px solid #d9d9d9;
+}
 
+.container input:focus {
+    border: 2px solid #006b64;
+    outline: 0;
 }
 
 .container label {
@@ -288,7 +292,6 @@ a.animated-button.thar-four:before {
     width: 200px;
     border-radius: 25px;
     cursor: pointer;
-
 }
 
 #butao:hover {
@@ -309,6 +312,17 @@ a.animated-button.thar-four:before {
     display: flex;
     justify-content: end;
     width: 70%;
+}
+
+.form-senha {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.form-senha input {
+    width: 130;
+    margin-left: 15px;
 }
 
 .container main {

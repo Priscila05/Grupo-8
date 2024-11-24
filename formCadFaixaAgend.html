@@ -49,41 +49,32 @@
         </ul>
     </main>
 </div>
-
-<main style="font-size: large;">
-    Cadastrar a Faixa de horário disponivel
-</main>
 <br>
+<main style="font-size: large;">
+    <h4 style="color:#006b64; font-size: 19px; margin-left: 15px;">Cadastro da Faixa de horário disponivel</h4>
+</main>
 <br>
 
 <div class="container">
     <main>
-        <form style="align-self: center;">
-            Informe a data inico 
-            <br>
+        <form id="formCadastro" style="align-self: center;">
+            <label for="dataini"> Informe a data de início </label>
             <input type="date" id="dataini" required>
             <br>
+            <label for="horaini">Informe a hora de início </label>
+            <input type="time" id="horaini" required>
             <br>
-            Informe a hora inico 
-            <br>
-            <input type="datetime" id="horaini" required>
-            <br>
-            <br>
-            Informe a data Fim 
-            <br>
+            <label for="datafim">Informe a data de finalização </label>
             <input type="date" id="datafim" required>
             <br>
+            <label for="horafim">Informe a hora de finalização</label>
+            <input type="time" id="horafim" required>
             <br>
-            Informe a hora Fim 
-            <br>
-            <input type="datetime" id="forafim" required>
-            <br>
-            <br>
-            <input type="submit" onclick="AgendamentoRealizado()" value="cadastrar">
+            <input id="butao" type="submit" onclick="AgendamentoRealizado()" value="cadastrar">
             
             <script>
                 function AgendamentoRealizado(){
-                    alert('Sua dúvida foi enviada com sucesso!');
+                    alert('Seu cadastro foi enviado com sucesso!');
                 }
                         
             </script>        
