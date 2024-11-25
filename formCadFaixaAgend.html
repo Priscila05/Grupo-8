@@ -57,7 +57,7 @@
 
 <div class="container">
     <main>
-        <form id="formCadastro" style="align-self: center;">
+        <form id="formCadastro" style="align-self: center;" onsubmit="AgendamentoRealizado()">
             <label for="dataini"> Informe a data de início </label>
             <input type="date" id="dataini" required>
             <br>
@@ -70,11 +70,11 @@
             <label for="horafim">Informe a hora de finalização</label>
             <input type="time" id="horafim" required>
             <br>
-            <input id="butao" type="submit" onclick="AgendamentoRealizado()" value="cadastrar">
+            <button id="butao">Cadastrar</button>
             
             <script>
                 function AgendamentoRealizado(){
-                    alert('Seu cadastro foi enviado com sucesso!');
+                    alert('Seu agendamento foi cadastrado com sucesso!');
                 }
                         
             </script>        

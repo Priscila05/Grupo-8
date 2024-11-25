@@ -292,6 +292,7 @@ a.animated-button.thar-four:before {
     width: 200px;
     border-radius: 25px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 #butao:hover {
