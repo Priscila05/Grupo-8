@@ -286,9 +286,9 @@ a.animated-button.thar-four:before {
     display: none; 
 }  
 .star {
-    font-size: 45px;
+    font-size: 50px;
     cursor: pointer;
-    color: #ccc;
+    color: #f2f2f2;
   }
   
 .rating input:checked ~ label,
@@ -296,26 +296,44 @@ a.animated-button.thar-four:before {
     color: #ffc107; /* Cor das estrelas selecionadas ou ao passar o mouse */
   }
  
+.avalicao {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.avalicao p {
+    color: #006b64;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.avalicao input {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 2px solid #006b64;
+    padding: 0 20px;
+}
+
 .avalicao textarea {
     width: 50%;
-    height: 200px;
+    height: 250px;
     padding: 15px 20px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #868686;
+    border-radius: 7px;
+    border: 2px solid #006b64;
 }
-.avalicao textarea:focus {
-    border: 1px solid #006b64;
-    outline: 0;
-}
+
 .avalicao button {
     border: 0;
     padding: 10px 30px;
     background-color: #006b64;
     color: #f2f2f2;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 .avalicao button:hover {
-    background-color: #1f5a56;
+    background-color:#006b64;
+    color: #f2f2f2;
 }
