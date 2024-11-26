@@ -174,6 +174,12 @@ function formatarCPF(cpfField){
         cpf = cpf.replace(/(\d{3})(\d)/, '$1-$2');
     }
 
+    if (cpf.length > 3) {
+        
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1-$2');
+    
+    }
+
     cpfFieldd.value = cpf
 
 }
