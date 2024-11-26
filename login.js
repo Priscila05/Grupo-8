@@ -148,3 +148,38 @@ window.location.href = caminho;
                         }
 
                     }
+
+function formatarCPF(cpfField){
+
+    // Remover caracteres que não sejam dígitos
+
+    let cpf = cpfField.value.replace(/\D/g,'');
+
+    // formatação CPF
+
+    if (cpof.length > 11){
+
+        cpf = cpf.slice(0,11);
+
+    }
+
+    if (cpf.length > 9){
+
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+
+    }
+
+    if (cpf.length > 6){
+
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1-$2');
+    }
+
+    cpfFieldd.value = cpf
+
+}
+
+
+
+
+
+
