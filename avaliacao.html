@@ -19,7 +19,7 @@
                 <button class="loginButton" type="button" onclick="verificarLogin()">Login</button>
             </div>
         </header> 
-        <p style="text-align: center; font-size: 20px;">AGENDAMENTO ONLINE - DUVIDAS</p>
+        <p style="text-align: center; font-size: 20px;">AGENDAMENTO ONLINE - Avaliação</p>
     </div> 
         <br>
 
@@ -33,7 +33,7 @@
             <li role="presentation "><a href="index.html" CLASS="animated-button thar-four menu-txt" id="menu-tops">Novidades</a></li>
             <li role="presentation "><a onclick="verificaCaminhoagendamento()" CLASS="animated-button thar-four menu-txt" id="menu-tops">Agendamentos</a></li>
             <li role="presentation "><a onclick="verificaCaminhoCadastro()" CLASS="animated-button thar-four menu-txt" id="menu-tops">Cadastros</a></li>
-            <li role="presentation "><a href="duvidas.html" CLASS="animated-button thar-four menu-txt" id="menu-tops-active">Dúvidas</a></li>
+            <li role="presentation "><a href="avaliacao.html" CLASS="animated-button thar-four menu-txt" id="menu-tops-active">Avaliação</a></li>
         </ul>
     </div>
 
@@ -47,36 +47,20 @@
         </ul>
     </main>
 </div>
-<br>
-<div class="duvidas">
 
-    <form id="formDuvida" onsubmit="enviarDuvida(event)">
-        <input type="text" id="nome" placeholder="Nome completo:"required>
-        <input type="email" id="email" placeholder="Insira seu Email:" required>
-        <textarea id="commentario" placeholder="Escreva sua dúvida ou comentário" required></textarea>
-        <button type="submit">Enviar</button>
-        <script>
-            function enviarDuvida(event) {
-                event.preventDefault();
-                
-                let nome = document.getElementById('nome').value;
-                let email = document.getElementById('email').value;
-                let commentario = document.getElementById('commentario').value; // Corrigido para 'commentario'
-                
-                if (!nome || !email || !commentario) {
-                    alert('Por favor, preencha todos os campos.');
-                    return;
-                } else {
-                    document.getElementById('nome').value = '';
-                    document.getElementById('email').value = '';
-                    document.getElementById('commentario').value = '';
-                    alert('Sua dúvida foi enviada com sucesso!');
-                }
-            }
-        </script>
-        
-    </form>
+<div class="rating">
+        <input type="radio" name="rating" id="star5" value="5">
+        <label for="star5" class="star">&#9733;</label>
+        <input type="radio" name="rating" id="star4" value="4">
+        <label for="star4" class="star">&#9733;</label>
+        <input type="radio" name="rating" id="star5" value="3">
+        <label for="star3" class="star">&#9733;</label>
+        <input type="radio" name="rating" id="star4" value="2">
+        <label for="star2" class="star">&#9733;</label>
+        <input type="radio" name="rating" id="star5" value="1">
+        <label for="star1" class="star">&#9733;</label>
 </div>
+
 
 <br>
 <br>
