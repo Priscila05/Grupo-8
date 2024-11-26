@@ -127,4 +127,24 @@ function verificaCaminhoagendamento() {
 localStorage.setItem('caminhoCadastro', caminho); 
 window.location.href = caminho;
 }  
+  function validarFormulario() {
 
+    const senha = document.getElementById('senhaCampo').value;   
+
+    const confirme = document.getElementById('confirme').value;
+
+                        if (senha !== confirme) {
+
+                            alert('As senhas não conferem.');
+
+                            return false;
+
+            }else{
+
+                            alert('Seu Cadastro foi enviado com sucesso!');  
+
+                return true;
+
+                        }
+
+                    }
