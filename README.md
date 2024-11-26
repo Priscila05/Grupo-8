@@ -25,7 +25,7 @@ Protótipo
  - 2 - Acima da lista de arquivos, clique em "Código" e copie a URL.
  - 3 - Abra o terminal do seu navegador e altere o diretório atual para uma pasta vazia.
  - 4 - Digite "git clone" e cole a URL e pressione enter.
- - 5 - Abra esta pasta no explorador de arquivos, e em seguida, abra o arquivo index.htlm no seu navegador.
+ - 5 - Abra esta pasta no explorador de arquivos, em seguida, abra o arquivo index.htlm no seu navegador.
 
 ## MVP defenido:
  - Será realizado os requisitos com prioridade média e alta.
