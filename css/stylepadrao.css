@@ -275,3 +275,47 @@ a.animated-button.thar-four:before {
     display: flex;
     justify-content: center;
 }
+
+/*avaliação*/
+.rating {
+    display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+  }
+.rating input {
+    display: none; 
+}  
+.star {
+    font-size: 45px;
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+.rating input:checked ~ label,
+.rating input:not(:checked) ~ label:hover {
+    color: #ffc107; /* Cor das estrelas selecionadas ou ao passar o mouse */
+  }
+ 
+.avalicao textarea {
+    width: 50%;
+    height: 200px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+}
+.avalicao textarea:focus {
+    border: 1px solid #006b64;
+    outline: 0;
+}
+.avalicao button {
+    border: 0;
+    padding: 10px 30px;
+    background-color: #006b64;
+    color: #f2f2f2;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.avalicao button:hover {
+    background-color: #1f5a56;
+}
