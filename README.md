@@ -10,12 +10,10 @@ Este repositório tem o objetivo de facilitar a colaboração entre os integrant
 ## Situação problema:
 AgendaFácil NAF
 
-## Descrição resumida das tecnologias utilizadas: 
- - Git hub: usada para juntar as partes do projeto
- - Planilha no excel: usada para a elaboração dos requisitos
- - HTML:
- - CSS:
- - JavaScript:
+## Descrição resumida das tecnologias utilizadas:
+ - HTML: Usada para desenvolver o layout.
+ - CSS: Usada para desenvolver o layout.
+ - JavaScript: Usada para as validações e mensagens mostradas na tela.
 
 ## Tipo de MVP: 
 Protótipo
@@ -50,6 +48,6 @@ Protótipo
  - Figma.
 
 ## Telas prototipadas:
- - Tela de cadastro.
  - Tela de agendamento.
- - Tela de perfil.
+ - Tela de avaliação.
+ - Tela de cadastro.
