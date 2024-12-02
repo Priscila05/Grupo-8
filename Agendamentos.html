@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
     <script src="login.js"></script>  
-    <script src="cadastroagendamento.js"></script>  
 </head>
 <body>
 <div>    
@@ -59,10 +58,10 @@
                 <label for="tipoAgendamento">Tipo de Agendamento:</label>
                 <br>
                 <select id="tipoAgendamento" name="tipoAgendamento">
-                <option value="consulta">Duvidas Imposto de renda</option>
-                <option value="orientacao">Duvidas Imposto</option>
-                <option value="consulta">Duvidas sobre MEI</option>
-                <option value="consulta">Outros</option>
+                    <option value="Imp. Renda">Duvidas Imposto de renda</option>
+                    <option value="Duv. Imp.">Duvidas Imposto</option>
+                    <option value="Duv. MEI">Duvidas sobre MEI</option>
+                    <option value="Outros">Outros</option>
                 </select>
                 <br>
                 <br>
@@ -184,7 +183,7 @@ select: function(info) {
                     var form = modal.querySelector('form');
                     form.addEventListener('submit', function(e) {
                     e.preventDefault();
-                    var title = document.getElementById('duvida').value || 'Novo Evento';
+                    var title = document.getElementById('tipoAgendamento').value || 'Novo Evento';
                     EventosAgendado.push({
                         title: title,
                         start: selectedStart,
