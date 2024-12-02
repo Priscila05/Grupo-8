@@ -19,7 +19,7 @@ AgendaFácil NAF
 Protótipo
 
 ## Instruções para executar/abrir o MVP:
- - 1 - Acesse a página principal deste repositório.
+ - 1 - Acesse a página principal deste repositório (index.html).
  - 2 - Acima da lista de arquivos, clique em "Código" e copie a URL.
  - 3 - Abra o terminal do seu navegador e altere o diretório atual para uma pasta vazia.
  - 4 - Digite "git clone" e cole a URL e pressione enter.
